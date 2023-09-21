@@ -9,13 +9,13 @@ app.use(express.json());
 const port = process.env.PORT || 8000;
 
 app.get("/", (req, res) => {
-  res.status(200).send("Hola mundo");
+  return res.status(200).send("Hola mundo");
 });
 
 // ruta para books
 app.get("/books", (req, res) => {
   // devolver todos los libros
-  res.status(200).json(books);
+  return res.status(200).json(books);
 });
 
 app.listen(port, () => {
