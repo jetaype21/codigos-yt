@@ -1,6 +1,6 @@
-import express from "express";
-import books from "./assets/books.json" assert { type: "json" };
-import dotenv from "dotenv";
+const express = require("express");
+const dotenv = require("dotenv");
+const books = require("./assets/books.json");
 
 const app = express();
 dotenv.config();
