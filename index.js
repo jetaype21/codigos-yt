@@ -1,9 +1,7 @@
 const express = require("express");
-const dotenv = require("dotenv");
 const books = require("./assets/books.json");
 
 const app = express();
-dotenv.config();
 app.use(express.json());
 
 const port = process.env.PORT || 8000;
